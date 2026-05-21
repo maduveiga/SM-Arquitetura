@@ -20,6 +20,7 @@
 
   --font-serif: 'Playfair Display', Georgia, serif;
   --font-sans: 'Montserrat', system-ui, sans-serif;
+  --font-script: 'Pinyon Script', cursive;
 
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
@@ -371,18 +372,18 @@ a {
 }
 
 .hero-headline {
-  font-family: var(--font-serif);
-  font-size: clamp(3rem, 7vw, 6.5rem);
+  font-family: var(--font-script);
+  font-size: clamp(2.8rem, 5.5vw, 5rem);
   font-weight: 400;
-  line-height: 1.1;
-  letter-spacing: -0.01em;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
   color: var(--white);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
 .hero-headline em {
-  font-style: italic;
+  font-style: normal;
   font-weight: 400;
   color: var(--sand);
 }
