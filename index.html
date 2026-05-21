@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SM Arquitetura e Interiores | Sinara Mafra</title>
+  <meta name="description" content="SM Arquitetura e Interiores — Projetos que transformam espaços em experiências únicas. Arquitetura contemporânea de alto padrão em Blumenau, Santa Catarina." />
+  <meta name="keywords" content="arquitetura, interiores, design, Blumenau, Santa Catarina, alto padrão, reforma, projeto arquitetônico" />
+  <meta property="og:title" content="SM Arquitetura e Interiores" />
+  <meta property="og:description" content="Projetos que transformam espaços em experiências únicas." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="#hero" class="logo-link" aria-label="SM Arquitetura e Interiores">
+        <img src="MIDIA/LOGO SM.png" alt="SM Arquitetura e Interiores" class="logo" id="logo" />
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#sobre" class="nav-link">Sobre</a>
+        <a href="#projetos" class="nav-link">Projetos</a>
+        <a href="#servicos" class="nav-link">Serviços</a>
+        <a href="#processo" class="nav-link">Processo</a>
+        <a href="#contato" class="nav-link nav-cta">Contato</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <nav>
+      <a href="#sobre" class="mobile-nav-link">Sobre</a>
+      <a href="#projetos" class="mobile-nav-link">Projetos</a>
+      <a href="#servicos" class="mobile-nav-link">Serviços</a>
+      <a href="#processo" class="mobile-nav-link">Processo</a>
+      <a href="#contato" class="mobile-nav-link">Contato</a>
+    </nav>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-media">
+      <video class="hero-video active" id="heroVideo0" src="MIDIA/hero1.mp4" autoplay muted loop playsinline preload="auto"></video>
+      <video class="hero-video" id="heroVideo1" src="MIDIA/hero2.mp4" muted loop playsinline preload="auto"></video>
+      <video class="hero-video" id="heroVideo2" src="MIDIA/hero3.mp4" muted loop playsinline preload="auto"></video>
+      <video class="hero-video" id="heroVideo3" src="MIDIA/hero4.mp4" muted loop playsinline preload="auto"></video>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal-up">Arquitetura &amp; Interiores</p>
+      <h1 class="hero-headline reveal-up">
+        Onde a forma<br />
+        <em>encontra a alma</em><br />
+        de cada espaço
+      </h1>
+      <p class="hero-sub reveal-up">Criamos ambientes que respiram intenção, elegância e pertencimento.</p>
+      <div class="hero-actions reveal-up">
+        <a href="https://api.whatsapp.com/send?phone=554796452274&text=Olá+Sinara%2C" target="_blank" rel="noopener" class="btn-whatsapp" id="heroWhatsapp">
+          <span class="btn-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.334.101 11.893c0 2.096.549 4.14 1.595 5.945L0 24l6.335-1.652c1.746.943 3.71 1.444 5.71 1.444h.006c6.585 0 11.946-5.336 11.949-11.896.002-3.176-1.24-6.165-3.48-8.447z" fill="currentColor"/>
+              <path d="M12.045 21.785h-.005c-1.774 0-3.513-.474-5.03-1.37l-.361-.213-3.754.979 1.004-3.648-.236-.374C2.53 15.569 1.9 13.752 1.9 11.893c.002-5.57 4.57-10.1 10.148-10.1 2.709 0 5.253 1.046 7.168 2.946 1.914 1.9 2.969 4.428 2.968 7.115-.003 5.57-4.572 10.1-10.139 10.1z" fill="#fff"/>
+              <path d="M17.472 14.382c-.297-.148-1.758-.866-2.031-.965-.273-.099-.47-.148-.668.15-.197.297-.767.965-.94 1.164-.174.198-.347.223-.644.075-.297-.148-1.255-.461-2.39-1.47-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.445-.521.15-.174.2-.298.3-.497.098-.198.05-.372-.025-.52-.075-.149-.668-1.612-.916-2.207-.241-.58-.486-.501-.668-.51l-.57-.01c-.198 0-.52.074-.792.372-.273.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.15.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.29.173-1.413-.074-.124-.272-.198-.57-.347z" fill="currentColor"/>
+            </svg>
+          </span>
+          <span>Iniciar Conversa</span>
+        </a>
+        <a href="#projetos" class="btn-explore">
+          Ver Projetos
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 1L13 7M13 7L7 13M13 7H1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator" id="scrollIndicator">
+      <div class="scroll-line"></div>
+      <span>Explorar</span>
+    </div>
+    <!-- Video dots indicator -->
+    <div class="hero-dots">
+      <button class="dot active" data-index="0" aria-label="Vídeo 1"></button>
+      <button class="dot" data-index="1" aria-label="Vídeo 2"></button>
+      <button class="dot" data-index="2" aria-label="Vídeo 3"></button>
+      <button class="dot" data-index="3" aria-label="Vídeo 4"></button>
+    </div>
+  </section>
+
+  <!-- Sobre Nós -->
+  <section class="sobre" id="sobre">
+    <div class="container">
+      <div class="sobre-grid">
+        <div class="sobre-media-col">
+          <div class="sobre-video-stack">
+            <div class="sobre-video-main reveal-left">
+              <video src="MIDIA/sobrenos.mp4" autoplay muted loop playsinline class="sobre-video"></video>
+              <div class="sobre-video-badge">
+                <span>SM</span>
+              </div>
+            </div>
+            <div class="sobre-video-secondary reveal-left" style="--delay: 0.2s">
+              <video src="MIDIA/sobrenos1.mp4" autoplay muted loop playsinline class="sobre-video"></video>
+            </div>
+          </div>
+        </div>
+        <div class="sobre-content-col">
+          <p class="section-eyebrow reveal-up">Sobre Nós</p>
+          <h2 class="section-title reveal-up">
+            Arquitetura que<br />
+            <em>transforma vivências</em>
+          </h2>
+          <div class="sobre-text reveal-up">
+            <p>
+              A SM Arquitetura e Interiores nasce da convicção de que cada espaço tem uma história a contar. Nossa prática é guiada pela escuta atenta, pelo olhar criterioso e pela busca incessante de equilíbrio entre função e beleza.
+            </p>
+            <p>
+              Com sede em Blumenau, atendemos clientes que valorizam o processo tanto quanto o resultado. Cada projeto é tratado como único: concebido com rigor técnico, sensibilidade estética e profundo respeito pelas necessidades de quem vai habitá-lo.
+            </p>
+            <p>
+              Acreditamos que a arquitetura de excelência não impõe tendências. Ela revela intenções, cria pertencimento e eleva a qualidade de vida de forma silenciosa e duradoura.
+            </p>
+          </div>
+          <div class="sobre-stats reveal-up" style="--delay: 0.3s">
+            <div class="stat">
+              <span class="stat-number">08</span>
+              <span class="stat-label">Anos de prática</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <span class="stat-number">120+</span>
+              <span class="stat-label">Projetos entregues</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Projetos personalizados</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projetos -->
+  <section class="projetos" id="projetos">
+    <div class="container">
+      <div class="section-header-centered">
+        <p class="section-eyebrow reveal-up">Portfólio</p>
+        <h2 class="section-title reveal-up">
+          Projetos que<br />
+          <em>definem espaços</em>
+        </h2>
+      </div>
+    </div>
+    <div class="projetos-gallery">
+      <div class="projeto-item grande reveal-scale" data-category="Residencial">
+        <div class="projeto-media">
+          <video src="MIDIA/hero1.mp4" muted loop playsinline class="projeto-video"></video>
+        </div>
+        <div class="projeto-info">
+          <span class="projeto-categoria">Residencial</span>
+          <h3 class="projeto-nome">Residência contemporânea</h3>
+        </div>
+      </div>
+      <div class="projeto-item reveal-scale" style="--delay: 0.1s" data-category="Interiores">
+        <div class="projeto-media">
+          <video src="MIDIA/hero2.mp4" muted loop playsinline class="projeto-video"></video>
+        </div>
+        <div class="projeto-info">
+          <span class="projeto-categoria">Interiores</span>
+          <h3 class="projeto-nome">Sala de estar editorial</h3>
+        </div>
+      </div>
+      <div class="projeto-item reveal-scale" style="--delay: 0.2s" data-category="Comercial">
+        <div class="projeto-media">
+          <video src="MIDIA/hero3.mp4" muted loop playsinline class="projeto-video"></video>
+        </div>
+        <div class="projeto-info">
+          <span class="projeto-categoria">Comercial</span>
+          <h3 class="projeto-nome">Espaço corporativo</h3>
+        </div>
+      </div>
+      <div class="projeto-item grande reveal-scale" style="--delay: 0.15s" data-category="Residencial">
+        <div class="projeto-media">
+          <video src="MIDIA/hero4.mp4" muted loop playsinline class="projeto-video"></video>
+        </div>
+        <div class="projeto-info">
+          <span class="projeto-categoria">Residencial</span>
+          <h3 class="projeto-nome">Suíte master de alto padrão</h3>
+        </div>
+      </div>
+    </div>
+    <div class="projetos-cta reveal-up">
+      <a href="https://api.whatsapp.com/send?phone=554796452274&text=Olá+Sinara%2C" target="_blank" rel="noopener" class="btn-outline">
+        Solicitar orçamento
+      </a>
+    </div>
+  </section>
+
+  <!-- Serviços -->
+  <section class="servicos" id="servicos">
+    <div class="container">
+      <div class="section-header-centered">
+        <p class="section-eyebrow reveal-up">O que fazemos</p>
+        <h2 class="section-title reveal-up">
+          Uma prática completa<br />
+          <em>de criação de espaços</em>
+        </h2>
+      </div>
+      <div class="servicos-grid">
+        <div class="servico-card reveal-up">
+          <div class="servico-numero">01</div>
+          <div class="servico-linha"></div>
+          <h3 class="servico-titulo">Projeto Arquitetônico</h3>
+          <p class="servico-desc">
+            Da concepção ao detalhe construtivo, desenvolvemos projetos que dialogam com o entorno, com a vida dos moradores e com a permanência no tempo. Cada planta é uma narrativa espacial cuidadosamente construída.
+          </p>
+          <div class="servico-detalhe">
+            <span>Plantas e cortes</span>
+            <span>Memorial descritivo</span>
+            <span>Compatibilização</span>
+          </div>
+        </div>
+        <div class="servico-card reveal-up" style="--delay: 0.15s">
+          <div class="servico-numero">02</div>
+          <div class="servico-linha"></div>
+          <h3 class="servico-titulo">Design de Interiores</h3>
+          <p class="servico-desc">
+            Curadoria de materiais, paletas cromáticas, mobiliário e iluminação compõem ambientes que comunicam personalidade. Interiores que não apenas se contemplam, mas que se experienciam com todos os sentidos.
+          </p>
+          <div class="servico-detalhe">
+            <span>Conceito visual</span>
+            <span>Moodboard e paleta</span>
+            <span>Especificação técnica</span>
+          </div>
+        </div>
+        <div class="servico-card reveal-up" style="--delay: 0.3s">
+          <div class="servico-numero">03</div>
+          <div class="servico-linha"></div>
+          <h3 class="servico-titulo">Reformas</h3>
+          <p class="servico-desc">
+            Transformamos espaços existentes com inteligência projetual e respeito pela essência do que já foi construído. Uma reforma bem conduzida revela o potencial oculto de cada ambiente.
+          </p>
+          <div class="servico-detalhe">
+            <span>Diagnóstico espacial</span>
+            <span>Projeto executivo</span>
+            <span>Gestão da obra</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Processo -->
+  <section class="processo" id="processo">
+    <div class="processo-bg">
+      <video src="MIDIA/sobrenos.mp4" autoplay muted loop playsinline class="processo-video-bg"></video>
+      <div class="processo-overlay"></div>
+    </div>
+    <div class="container">
+      <div class="processo-content">
+        <div class="processo-header">
+          <p class="section-eyebrow light reveal-up">A experiência</p>
+          <h2 class="section-title light reveal-up">
+            Do primeiro encontro<br />
+            <em>à entrega perfeita</em>
+          </h2>
+        </div>
+        <div class="etapas">
+          <div class="etapa reveal-up">
+            <div class="etapa-numero">I</div>
+            <div class="etapa-conteudo">
+              <h4 class="etapa-titulo">Briefing</h4>
+              <p class="etapa-desc">Uma conversa profunda sobre como você vive, o que valoriza e o que espera do seu espaço. Escutamos com atenção antes de propor qualquer solução.</p>
+            </div>
+          </div>
+          <div class="etapa-linha"></div>
+          <div class="etapa reveal-up" style="--delay: 0.1s">
+            <div class="etapa-numero">II</div>
+            <div class="etapa-conteudo">
+              <h4 class="etapa-titulo">Conceito</h4>
+              <p class="etapa-desc">Traduzimos a escuta em uma proposta estética e espacial coerente. O conceito guia todas as decisões criativas que virão a seguir.</p>
+            </div>
+          </div>
+          <div class="etapa-linha"></div>
+          <div class="etapa reveal-up" style="--delay: 0.2s">
+            <div class="etapa-numero">III</div>
+            <div class="etapa-conteudo">
+              <h4 class="etapa-titulo">Desenvolvimento</h4>
+              <p class="etapa-desc">Plantas, renders, especificações e detalhamentos. Cada detalhe é pensado com precisão para garantir que a visão se transforme em realidade.</p>
+            </div>
+          </div>
+          <div class="etapa-linha"></div>
+          <div class="etapa reveal-up" style="--delay: 0.3s">
+            <div class="etapa-numero">IV</div>
+            <div class="etapa-conteudo">
+              <h4 class="etapa-titulo">Execução</h4>
+              <p class="etapa-desc">Acompanhamento rigoroso de cada fase da obra. Presença constante para garantir que a qualidade do projeto se mantenha até o último acabamento.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section class="contato" id="contato">
+    <div class="container">
+      <div class="contato-grid">
+        <div class="contato-col-left">
+          <p class="section-eyebrow reveal-up">Vamos conversar</p>
+          <h2 class="section-title reveal-up">
+            Pronto para criar<br />
+            <em>algo extraordinário?</em>
+          </h2>
+          <p class="contato-texto reveal-up">
+            Cada projeto começa com uma conversa. Compartilhe sua visão e deixe que nossa expertise transforme seu espaço em uma experiência singular.
+          </p>
+          <div class="contato-info reveal-up" style="--delay: 0.2s">
+            <div class="info-item">
+              <span class="info-label">Endereço</span>
+              <span class="info-valor">Rua Franz Volles 130<br />Blumenau, Santa Catarina, Brasil</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">WhatsApp</span>
+              <span class="info-valor">+55 47 9645-2274</span>
+            </div>
+          </div>
+          <a href="https://api.whatsapp.com/send?phone=554796452274&text=Olá+Sinara%2C" target="_blank" rel="noopener" class="btn-whatsapp-grande reveal-up" id="contatoWhatsapp" style="--delay: 0.3s">
+            <span class="btn-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.334.101 11.893c0 2.096.549 4.14 1.595 5.945L0 24l6.335-1.652c1.746.943 3.71 1.444 5.71 1.444h.006c6.585 0 11.946-5.336 11.949-11.896.002-3.176-1.24-6.165-3.48-8.447z" fill="currentColor"/>
+                <path d="M12.045 21.785h-.005c-1.774 0-3.513-.474-5.03-1.37l-.361-.213-3.754.979 1.004-3.648-.236-.374C2.53 15.569 1.9 13.752 1.9 11.893c.002-5.57 4.57-10.1 10.148-10.1 2.709 0 5.253 1.046 7.168 2.946 1.914 1.9 2.969 4.428 2.968 7.115-.003 5.57-4.572 10.1-10.139 10.1z" fill="#fff"/>
+                <path d="M17.472 14.382c-.297-.148-1.758-.866-2.031-.965-.273-.099-.47-.148-.668.15-.197.297-.767.965-.94 1.164-.174.198-.347.223-.644.075-.297-.148-1.255-.461-2.39-1.47-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.445-.521.15-.174.2-.298.3-.497.098-.198.05-.372-.025-.52-.075-.149-.668-1.612-.916-2.207-.241-.58-.486-.501-.668-.51l-.57-.01c-.198 0-.52.074-.792.372-.273.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.15.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.29.173-1.413-.074-.124-.272-.198-.57-.347z" fill="currentColor"/>
+              </svg>
+            </span>
+            Falar com a Sinara
+          </a>
+        </div>
+        <div class="contato-col-right">
+          <div class="contato-visual reveal-right">
+            <video src="MIDIA/sobrenos1.mp4" autoplay muted loop playsinline class="contato-video"></video>
+            <div class="contato-card-detalhe">
+              <span class="detalhe-label">SM Arquitetura &amp; Interiores</span>
+              <span class="detalhe-sub">Blumenau, SC</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="MIDIA/LOGO SM.png" alt="SM Arquitetura e Interiores" class="footer-logo" />
+          <p class="footer-tagline">Arquitetura de alto padrão<br />em Blumenau, SC</p>
+        </div>
+        <div class="footer-nav">
+          <a href="#sobre">Sobre</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#processo">Processo</a>
+          <a href="#contato">Contato</a>
+        </div>
+        <div class="footer-contact">
+          <a href="https://api.whatsapp.com/send?phone=554796452274&text=Olá+Sinara%2C" target="_blank" rel="noopener" class="footer-whatsapp">WhatsApp</a>
+          <address>Rua Franz Volles 130<br />Blumenau, SC, Brasil</address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2025 SM Arquitetura e Interiores. Todos os direitos reservados.</span>
+        <span class="footer-credit">Desenvolvido com excelência</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
