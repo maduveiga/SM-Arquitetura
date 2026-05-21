@@ -256,4 +256,26 @@
 
   sections.forEach(function (s) { sectionObserver.observe(s); });
 
+  /* ---- Typewriter Effect for Portfolio ---- */
+  const twTarget = document.getElementById('typewriter-target');
+  if (twTarget) {
+    const textToType = twTarget.getAttribute('data-text') || '';
+    twTarget.textContent = '';
+    const twObserver = new IntersectionObserver(function(entries) {
+      if (entries[0].isIntersecting) {
+        let i = 0;
+        function typeChar() {
+          if (i < textToType.length) {
+            twTarget.textContent += textToType.charAt(i);
+            i++;
+            setTimeout(typeChar, 50);
+          }
+        }
+        setTimeout(typeChar, 200);
+        twObserver.disconnect();
+      }
+    }, { threshold: 0.5 });
+    twObserver.observe(twTarget);
+  }
+
 })();
