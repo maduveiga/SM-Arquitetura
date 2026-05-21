@@ -13,6 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="preload" as="video" href="MIDIA/hero1.mp4" type="video/mp4" />
 </head>
 <body>
 
@@ -24,7 +25,7 @@
   <header class="header" id="header">
     <div class="header-inner">
       <a href="#hero" class="logo-link" aria-label="SM Arquitetura e Interiores">
-        <img src="MIDIA/LOGO SM.png" alt="SM Arquitetura e Interiores" class="logo" id="logo" />
+        <img src="MIDIA/LOGO SM.png" alt="SM Arquitetura e Interiores" class="logo" id="logo" decoding="async" fetchpriority="high" />
       </a>
       <nav class="nav" id="nav">
         <a href="#sobre" class="nav-link">Sobre</a>
@@ -55,9 +56,9 @@
   <section class="hero" id="hero">
     <div class="hero-media">
       <video class="hero-video active" id="heroVideo0" src="MIDIA/hero1.mp4" autoplay muted loop playsinline preload="auto"></video>
-      <video class="hero-video" id="heroVideo1" src="MIDIA/hero2.mp4" muted loop playsinline preload="auto"></video>
-      <video class="hero-video" id="heroVideo2" src="MIDIA/hero3.mp4" muted loop playsinline preload="auto"></video>
-      <video class="hero-video" id="heroVideo3" src="MIDIA/hero4.mp4" muted loop playsinline preload="auto"></video>
+      <video class="hero-video" id="heroVideo1" src="MIDIA/hero2.mp4" muted loop playsinline preload="none"></video>
+      <video class="hero-video" id="heroVideo2" src="MIDIA/hero3.mp4" muted loop playsinline preload="none"></video>
+      <video class="hero-video" id="heroVideo3" src="MIDIA/hero4.mp4" muted loop playsinline preload="none"></video>
     </div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
@@ -107,13 +108,13 @@
         <div class="sobre-media-col">
           <div class="sobre-video-stack">
             <div class="sobre-video-main reveal-left">
-              <video src="MIDIA/sobrenos.mp4" autoplay muted loop playsinline class="sobre-video"></video>
+              <video src="MIDIA/sobrenos.mp4" autoplay muted loop playsinline preload="metadata" class="sobre-video"></video>
               <div class="sobre-video-badge">
                 <span>SM</span>
               </div>
             </div>
             <div class="sobre-video-secondary reveal-left" style="--delay: 0.2s">
-              <video src="MIDIA/sobrenos1.mp4" autoplay muted loop playsinline class="sobre-video"></video>
+              <video src="MIDIA/sobrenos1.mp4" autoplay muted loop playsinline preload="none" class="sobre-video"></video>
             </div>
           </div>
         </div>
@@ -169,7 +170,7 @@
     <div class="projetos-gallery">
       <div class="projeto-item grande reveal-scale" data-category="Residencial">
         <div class="projeto-media">
-          <video src="MIDIA/hero1.mp4" muted loop playsinline class="projeto-video"></video>
+          <video src="MIDIA/hero1.mp4" muted loop playsinline preload="none" class="projeto-video"></video>
         </div>
         <div class="projeto-info">
           <span class="projeto-categoria">Residencial</span>
@@ -178,7 +179,7 @@
       </div>
       <div class="projeto-item reveal-scale" style="--delay: 0.1s" data-category="Interiores">
         <div class="projeto-media">
-          <video src="MIDIA/hero2.mp4" muted loop playsinline class="projeto-video"></video>
+          <video src="MIDIA/hero2.mp4" muted loop playsinline preload="none" class="projeto-video"></video>
         </div>
         <div class="projeto-info">
           <span class="projeto-categoria">Interiores</span>
@@ -187,7 +188,7 @@
       </div>
       <div class="projeto-item reveal-scale" style="--delay: 0.2s" data-category="Comercial">
         <div class="projeto-media">
-          <video src="MIDIA/hero3.mp4" muted loop playsinline class="projeto-video"></video>
+          <video src="MIDIA/hero3.mp4" muted loop playsinline preload="none" class="projeto-video"></video>
         </div>
         <div class="projeto-info">
           <span class="projeto-categoria">Comercial</span>
@@ -196,7 +197,7 @@
       </div>
       <div class="projeto-item grande reveal-scale" style="--delay: 0.15s" data-category="Residencial">
         <div class="projeto-media">
-          <video src="MIDIA/hero4.mp4" muted loop playsinline class="projeto-video"></video>
+          <video src="MIDIA/hero4.mp4" muted loop playsinline preload="none" class="projeto-video"></video>
         </div>
         <div class="projeto-info">
           <span class="projeto-categoria">Residencial</span>
@@ -268,7 +269,7 @@
   <!-- Processo -->
   <section class="processo" id="processo">
     <div class="processo-bg">
-      <video src="MIDIA/sobrenos.mp4" autoplay muted loop playsinline class="processo-video-bg"></video>
+      <video src="MIDIA/sobrenos.mp4" autoplay muted loop playsinline preload="none" class="processo-video-bg"></video>
       <div class="processo-overlay"></div>
     </div>
     <div class="container">
@@ -353,7 +354,7 @@
         </div>
         <div class="contato-col-right">
           <div class="contato-visual reveal-right">
-            <video src="MIDIA/sobrenos1.mp4" autoplay muted loop playsinline class="contato-video"></video>
+            <video src="MIDIA/sobrenos1.mp4" autoplay muted loop playsinline preload="none" class="contato-video"></video>
             <div class="contato-card-detalhe">
               <span class="detalhe-label">SM Arquitetura &amp; Interiores</span>
               <span class="detalhe-sub">Blumenau, SC</span>
